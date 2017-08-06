@@ -1,0 +1,136 @@
+---
+title: | 
+    | Título 1 
+    | Título 2
+author: |
+    | Karlo Gregório Guidoni Martins
+    | Orientador:
+date: |
+    | 22 de fevereiro de 2017
+fontsize: 10pt # funciona com xelatex apenas
+mainfont: "Ubuntu Mono" # funciona com xelatex apenas
+sansfont: "Ubuntu Mono" # funciona com xelatex apenas
+monofont: "Ubuntu Mono" # funciona com xelatex apenas
+output:
+  beamer_presentation:
+    df_print: kable
+    fig_caption: no
+    # fig_height: 5
+    # fig_width: 6
+    includes:
+      in_header: sources/header.tex
+    latex_engine: xelatex # ou pdflatex para fonte padrão do metropolis
+    slide_level: 2
+    theme: metropolis
+csl: sources/ABNT.csl
+bibliography: sources/library.bib
+---
+
+```{r knitr_setup, include=FALSE, cache=FALSE}
+
+library(knitr)
+
+### Chunk options ###
+
+## Text results
+opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, eval = TRUE, size = 'footnotesize')
+
+## Code decoration
+opts_chunk$set(tidy = FALSE, comment = NA, highlight = TRUE, prompt = FALSE, crop = TRUE)
+
+# ## Cache
+opts_chunk$set(cache = TRUE, cache.path = "knitr_output/cache/")
+
+# ## Plots
+opts_chunk$set(fig.path = "knitr_output/figures/")
+opts_chunk$set(fig.align = 'center')
+
+### Hooks ###
+## Crop plot margins
+knit_hooks$set(crop = hook_pdfcrop)
+
+## Reduce font size
+# see http://stackoverflow.com/a/39961605
+# knit_hooks$set(smallfont = function(before, options, envir) {
+#   if (before) return(paste0("\n \\", options$size, "\n\n"))
+#   else return("\n\n \\normalsize \n")
+#   })
+
+```
+
+
+## SUMÁRIO
+
+- INTRODUÇÃO
+
+
+- OBJETIVOS & EXPECTATIVAS
+
+
+- MATERIAL & MÉTODOS
+
+
+- RESULTADOS 
+
+
+- DISCUSSÃO
+
+
+- CONCLUSÃO
+
+
+# INTRODUÇÃO
+
+
+--- 
+
+slide em título
+
+
+
+\vspace{1cm}
+
+
+\begincols  
+\begincol  
+ 
+primeira coluna
+
+\endcol
+
+\begincol  
+
+segunda coluna
+
+\endcol
+\endcols
+
+
+
+
+<!--INÍCIO: NOTAS TÉCNICAS------------------------------------------------------
+
+## notes
+
+```{r out.width='4in', out.height='3in', fig.}
+include_graphics("images/3D-1.png")
+```
+
+![](images/3D-1.jpg)
+
+https://tex.stackexchange.com/questions/24599/what-point-pt-font-size-are-large-etc
+
+
+Command             10pt    11pt    12pt
+\tiny               5       6       6
+\scriptsize         7       8       8
+\footnotesize       8       9       10
+\small              9       10      10.95
+\normalsize         10      10.95   12
+\large              12      12      14.4
+\Large              14.4    14.4    17.28
+\LARGE              17.28   17.28   20.74
+\huge               20.74   20.74   24.88
+\Huge               24.88   24.88   24.88
+
+----FIM: NOTAS TÉCNICAS-------------------------------------------------------->
