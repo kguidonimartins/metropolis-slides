@@ -3,14 +3,14 @@ title: |
     | Título 1 
     | Título 2
 author: |
-    | Karlo Gregório Guidoni Martins
+    | Aluno:
     | Orientador:
 date: |
     | 22 de fevereiro de 2017
-fontsize: 10pt # funciona com xelatex apenas
-mainfont: "Ubuntu Mono" # funciona com xelatex apenas
-sansfont: "Ubuntu Mono" # funciona com xelatex apenas
-monofont: "Ubuntu Mono" # funciona com xelatex apenas
+fontsize: 10pt          # funciona com pdflatex. veja `latex_engine`
+mainfont: "Ubuntu Mono" # use Arial no Windows
+sansfont: "Ubuntu Mono" # use Arial no Windows
+monofont: "Ubuntu Mono" # use Arial no Windows
 output:
   beamer_presentation:
     df_print: kable
@@ -19,11 +19,9 @@ output:
     # fig_width: 6
     includes:
       in_header: sources/header.tex
-    latex_engine: xelatex # ou pdflatex para fonte padrão do metropolis
+    latex_engine: xelatex # troque para pdflatex no Windows
     slide_level: 2
     theme: metropolis
-csl: sources/ABNT.csl
-bibliography: sources/library.bib
 ---
 
 ```{r knitr_setup, include=FALSE, cache=FALSE}
@@ -79,16 +77,21 @@ knit_hooks$set(crop = hook_pdfcrop)
 - CONCLUSÃO
 
 
-# INTRODUÇÃO
+# INTRODUÇÃO <!-- slide de transição: uma cerquilha -->
 
 
 --- 
 
-slide em título
+três hífens produzem um slide sem título: bom para imagens grandes
 
 
 
-\vspace{1cm}
+
+
+## INTRODUÇÃO <!-- slide de transição: duas cerquilha --> 
+
+
+\vspace{1cm} <!-- espaço verticais -->
 
 
 \begincols  
@@ -106,7 +109,9 @@ segunda coluna
 \endcols
 
 
+## INTRODUÇÃO
 
+Citação elegante^[Grman *et al.* 2010, *Ecology Letters* 13:1400-1410]
 
 <!--INÍCIO: NOTAS TÉCNICAS------------------------------------------------------
 
