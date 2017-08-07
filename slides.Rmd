@@ -8,6 +8,7 @@ author: |
 date: |
     | 22 de fevereiro de 2017
 fontsize: 10pt          # funciona com pdflatex. veja `latex_engine`
+classoption: "compress, aspectratio=169" # try 43 or 169
 mainfont: "Ubuntu Mono" # use Arial no Windows
 sansfont: "Ubuntu Mono" # use Arial no Windows
 monofont: "Ubuntu Mono" # use Arial no Windows
