@@ -112,7 +112,7 @@ segunda coluna
 
 ## INTRODUÇÃO
 
-Citação elegante^[Grman *et al.* 2010, *Ecology Letters* 13:1400-1410]
+Citação elegante^[Kraft *et al.* 2015, *Functional Ecology* 29(5):592-599]
 
 <!--INÍCIO: NOTAS TÉCNICAS------------------------------------------------------
 
