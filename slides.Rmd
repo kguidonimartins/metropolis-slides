@@ -112,7 +112,69 @@ segunda coluna
 
 ## INTRODUÇÃO
 
+
 Citação elegante^[Kraft *et al.* 2015, *Functional Ecology* 29(5):592-599]
+
+
+## INTRODUÇÃO
+
+
+\bigskip Pirulito \textcolor{blue}{azul}.
+
+
+\bigskip Pirulito \textcolor{red}{vermelho}. \medskip
+
+
+\huge CAVALO
+
+
+\normalsize
+
+
+Seta $\rightarrow$ pra lá.
+
+
+## INTRODUÇÃO
+
+
+Pirulito \textcolor{blue}{azul}.
+
+
+Pirulito \textcolor{red}{vermelho}.
+
+
+\huge CAVALO
+
+
+\normalsize
+
+
+Seta $\rightarrow$ pra lá.
+
+## INTRO
+
+\begincols  
+\begincol  
+ 
+\bigskip primeira coluna
+
+\bigskip primeira coluna
+
+\endcol
+
+\begincol  
+
+segunda coluna
+
+segunda coluna
+
+\endcol
+\endcols
+
+https://stackoverflow.com/a/44903801
+
+##  {.standout}
+Questions?
 
 <!--INÍCIO: NOTAS TÉCNICAS------------------------------------------------------
 
